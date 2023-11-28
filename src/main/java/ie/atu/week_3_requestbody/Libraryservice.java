@@ -1,12 +1,15 @@
 package ie.atu.week_3_requestbody;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 
-public class Libraryservice {
+
+
+
     @Service
-    public class LibraryService {
+    public class Libraryservice {
         ArrayList<Book> booksInLibrary = new ArrayList<Book>();
         public void addBook(Book book) {
             booksInLibrary.add(book);
@@ -16,4 +19,4 @@ public class Libraryservice {
             return booksInLibrary;
         }
     }
-}
+
